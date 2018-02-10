@@ -7,7 +7,8 @@ import numpy as np
 5，把多维矩阵展开成一维矩阵
 """
 
-# 创建一维矩阵
+# 创建一维矩阵，这里有个坑，如果np.array([2,3,4])的形式，实际上生成的是数组
+# 为了生成矩阵，应该用np.array([[2,3,4]])
 a = np.array([2,3,4])
 print(a.ndim)
 print(a.shape)
