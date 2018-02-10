@@ -85,6 +85,7 @@ print("average", np.sum(a) / np.size(a))
 
 a = np.arange(0, 10, 1).reshape((2, 5))
 # 以列为单位进行聚合
+print("以列为单位进行聚合")
 print(a)
 print("max", np.max(a, axis=0))
 print("min", np.min(a, axis=0))
@@ -94,6 +95,7 @@ print("average", np.average(a, axis=0))
 
 # 以行为单位进行聚合
 a = np.arange(1, 31, 1).reshape((5, 6))
+print("以行为单位进行聚合")
 print(a)
 print("max", np.max(a, axis=1))
 print("min", np.min(a, axis=1))
